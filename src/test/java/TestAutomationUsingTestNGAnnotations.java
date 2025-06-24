@@ -26,7 +26,7 @@ public class TestAutomationUsingTestNGAnnotations {
         driver.findElement(By.name("search")).sendKeys("Selenium Webdriver");
         driver.findElement(By.xpath("//button[@type='submit']")).click();
        String headerText = driver.findElement(By.id("firstHeading")).getText();
-       Assert.assertEquals(headerText, "Search result");
+       Assert.assertEquals(headerText, "Search results");
     }
 
     @AfterTest
